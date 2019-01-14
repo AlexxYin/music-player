@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,initial-scale=1.0,user-scalable=no">
+	<title>Music Player</title>
+	<link rel="stylesheet" href="music_player.css">
+	<script src="jquery-2.1.3.min.js"></script>
+</head>
+<body>
+	<div id="main">
+	<div id="musicList">
+    	<div id="listTitle" class="list_title">Music Player<span class="list_tip"></span></div>
+        <div id="listContent" class="list_content">
+        	<ul id="listContentUl">
+
+            </ul>
+        </div>
+        <div class="list_audio">
+        	<img class="list_audioImg" src="img/pic1.jpg">
+            <div class="list_audioText">
+            	<h3 class="title">Yin's music player</h3>
+            </div>
+            <div class="list_audioBtn"></div>
+        </div>
+    </div>
+    <div id="musicDetails">
+    	<div id="detailsTitle" class="details_title">
+        	<div id="detailsName" class="details_name"></div>
+            <span class="details_tip"></span>
+        </div>
+        <div class="details_lyric"></div>
+        <div class="details_audio">
+        	<div class="details_audioAll">
+            	<div class="details_audioPro">
+                	<div id="detailsAudioProUp" class="details_audioProUp"></div>
+                    <div id="detailsAudioProBar" class="details_audioProBar"></div>
+                </div>
+                <div id="detailsNowTime" class="details_nowTime">00:00</div>
+                <div id="detailsAllTime" class="details_allTime">00:00</div>
+                <div id="detailsPlay" class="details_play"></div>
+                <div id="detailsPrev" class="details_prev"></div>
+                <div id="detailsNext" class="details_next"></div>
+            </div>
+        </div>
+        <ul class="details_btn">
+        	<li class="active"></li>
+            <li></li>
+        </ul>
+    </div>
+</div>
+<audio id="audio1"></audio>
+<script src="music_player.js"></script>
+</body>
+</html>
